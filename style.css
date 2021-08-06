@@ -1,0 +1,117 @@
+/* GENERAL */
+
+body{
+    color:#606060;
+    font-family: "Open Sans",sans-serif;
+    font-size: 15px;
+    margin: 0;
+}
+
+
+.highlight{
+    font-weight: 700;
+}
+
+
+/* LAYOUT AND TYPOGRAPHY */
+
+.container-main{
+    width: 100%;
+    max-width:1500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin: 2em auto;
+}
+
+/* SIDE DIVISION */
+
+aside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-image{
+    max-width: 100%;
+    display: block;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    align-items: center;
+}
+
+.profile-name{  
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.social{
+    display: flex;
+}
+
+.social a{
+    color: #101010;
+    font-size: 1.8em;
+    margin: auto 1em;
+}
+
+/* MAIN DIVISION */
+
+.main-column{
+    margin-bottom: 1.5em;
+    padding: 1em 1em 0 1em;
+}
+
+.main-column-heading{
+     font-size: 1.5em;
+     color: #101010;
+}
+
+.main-column h4{
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-size: 1.2em;
+}
+
+.main-column p{
+    padding-top: 0;
+    margin-top:0;
+}
+
+.main-column-date{
+    color: red;
+    text-align: right;
+}
+
+/* LARGE SCREEN */
+
+@media (min-width:1280px){
+
+    .container-main{
+        flex-direction: row;
+    }
+
+    .profile-image{
+        position: fixed;
+    }
+
+    .profile-name{
+        position: fixed;
+        margin-top: 220px;
+    }
+
+    .social{
+        position: fixed;
+        margin-top: 280px;
+    }
+
+
+    main{
+        width:80%
+    }
+
+    aside{
+        width:20%;
+    }
+}
